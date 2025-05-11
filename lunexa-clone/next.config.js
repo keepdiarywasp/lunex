@@ -2,6 +2,8 @@
 const nextConfig = {
   output: 'export',
   distDir: 'out',
+  // Ensure files in the public folder are copied to the output directory
+  skipTrailingSlashRedirect: true,
   images: {
     unoptimized: true,
     domains: [
