@@ -1,0 +1,21 @@
+# Netlify _headers file for optimal caching
+
+# Cache fonts for a year
+/_next/static/media/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache JS and CSS chunks
+/_next/static/chunks/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache static assets
+/_next/static/images/*
+  Cache-Control: public, max-age=2592000
+
+# Default caching for other static assets
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# No caching for HTML documents
+/*
+  Cache-Control: public, max-age=0, must-revalidate

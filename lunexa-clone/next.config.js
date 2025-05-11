@@ -4,6 +4,8 @@ const nextConfig = {
   distDir: 'out',
   // Ensure files in the public folder are copied to the output directory
   skipTrailingSlashRedirect: true,
+  // Optimize for Netlify deployment
+  trailingSlash: true,
   images: {
     unoptimized: true,
     domains: [

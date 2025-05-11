@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0 --turbopack",
-    "build": "next build && node scripts/copy-redirects.js",
+    "build": "next build && node scripts/netlify-deploy.js",
+    "build:netlify": "next build && node scripts/netlify-deploy.js",
     "start": "next start",
     "lint": "bunx biome lint --write && bunx tsc --noEmit",
     "format": "bunx biome format --write"
