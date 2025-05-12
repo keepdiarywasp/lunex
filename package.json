@@ -1,0 +1,11 @@
+{
+  "name": "lunexa-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "lunexa-clone"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=lunexa-clone"
+  }
+}
