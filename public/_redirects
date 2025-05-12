@@ -1,0 +1,6 @@
+/* /index.html 200! # force=true for SPA routing
+/blog/* /blog 200!
+/contact/* /contact 200!
+/login/* /login 200!
+/signup/* /signup 200!
+404 /404.html 404
