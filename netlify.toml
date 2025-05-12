@@ -82,8 +82,6 @@
   force = true
   conditions = {Path = {match = "\\/$"}}
 
-  status = 404
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
