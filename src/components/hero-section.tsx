@@ -26,7 +26,12 @@ function SplineBackground() {
         width='100%'
         height='100%'
         title="3D Planet Background"
-        className="scale-125 opacity-25"
+        className="opacity-85 animate-[globePulse_8s_ease-in-out_infinite] mix-blend-screen"
+        style={{ 
+          transformOrigin: 'center center',
+          filter: 'contrast(1.1) saturate(1.2) brightness(1.1)',
+          WebkitFilter: 'contrast(1.1) saturate(1.2) brightness(1.1)'
+        }}
       />
     </div>
   );
@@ -42,8 +47,9 @@ export function HeroSection() {
       <SplineBackground />
 
       {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#4c2885,transparent_40%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_40%,#2b1665,transparent_40%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#7b40d9,transparent_50%)] opacity-90" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_40%,#4525a3,transparent_50%)] opacity-90" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#2a4bd1,transparent_40%)] opacity-90" />
 
       <div className="container relative px-4 md:px-8">
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-12">

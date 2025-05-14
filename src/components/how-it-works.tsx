@@ -57,17 +57,22 @@ export function HowItWorks() {
           ))}
         </div>
 
-        <div className="mt-20 flex justify-center reveal" style={{ transitionDelay: '450ms' }}>
+        <div className="mt-20 flex justify-center reveal active" style={{ transitionDelay: '450ms' }}>
           <div className="relative w-full max-w-lg h-80 rounded-2xl border border-border/50 overflow-hidden hover:border-primary/60 transition-all duration-500 hover:shadow-lg hover:shadow-primary/20">
-            <Image
-              src="https://ext.same-assets.com/4269615189/1998606599.svg"
-              fill
-              alt="Lunexa AI Assistant"
-              className="object-contain p-8 transform transition-transform duration-700 hover:scale-105"
+            <iframe 
+              src="https://my.spline.design/claritystream-gtdht9CHvMl04NwjLNlb6yW3/" 
+              frameBorder="0" 
+              width="100%" 
+              height="100%"
+              title="Clarity Stream 3D Animation"
+              className="mix-blend-screen"
+              style={{
+                filter: 'contrast(1.3) saturate(1.4) brightness(1.2)',
+                WebkitFilter: 'contrast(1.3) saturate(1.4) brightness(1.2)',
+                opacity: 0.95
+              }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/30 to-transparent" />
-            <div className="absolute -bottom-10 -right-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl" />
-            <div className="absolute -top-10 -left-10 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl" />
           </div>
         </div>
       </div>
